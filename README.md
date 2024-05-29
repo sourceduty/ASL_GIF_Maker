@@ -2,6 +2,8 @@
 
 > Create single word GIFs in American Sign Language (ASL).
 
+#
+
 This Python script was developed for creating animated GIFs that spell out words in American Sign Language (ASL) using a sequence of images, each representing a different ASL letter. The user inputs a word, and the program assembles a GIF from corresponding images stored in a folder. Each image file is named after the letter it represents (e.g., A.jpeg, B.jpeg), making it straightforward for the program to locate and use the correct images based on the user's input.
 
 The script begins by defining a function create_gif_from_word, which ensures that the necessary directories for input images and output GIFs exist. It then converts the input word to uppercase and constructs a list of image file names that correspond to the letters in the word. This step is crucial because it aligns with the naming convention of the images in the folder, ensuring that the program can accurately retrieve each letter's image. The program checks if all required images are present in the input folder, and if any are missing, it raises an error and notifies the user. This validation step helps prevent issues that could arise from missing files and ensures that the GIF can be created successfully.
